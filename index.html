@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEAD STARTS -->
+
+<head>
+  <title>Sage</title>
+  <!-- META STARTS -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Daniela Gallegos Dupuis">
+  <meta property="og:type" content="website">
+  <!-- META ENDS -->
+  <!-- FAVICON -->
+  <link rel="icon" href="./img/logo.png">
+  <!-- STYLES BEGIN -->
+  <link rel="stylesheet" href="./styles/homepage.css">
+
+  <!-- for card -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<!-- HEAD ENDS -->
+
+<body>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-------------------------------------- Loader  --------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="loader">
+    <!-- Loading square for squar.red network -->
+    <span class="loader"><span class="loader-inner"></span></span>
+    <script>  $("#loader").fadeOut(3333);</script>
+  </div>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-------------------------------------- Three main pathways  --------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+
+  <div id="choose_path">
+    <div class="header"> 
+      <a href="./Content/sdg_4.html">About us</a>
+      <a href="./Content/account.html">Projects</a>
+      <a target='_blank' href="https://github.com/danigallegdup/GoogleSolutionChallenge24">Join us</a>
+    </div>
+
+    <div class="search-container">
+      <form id="search-form" action="/search" method="get">
+        <input type="search" id="search-input" name="q" placeholder="How to solve the 17 SDG's?">
+        <button type="submit" class="search-button">Go</button>
+      </form>
+    </div>
+
+    <script>
+      var stages = ['Second_stage', 'Third_stage', 'Fourth_stage', 'Footer'];
+      var currentStage = 0;
+
+      document.getElementById('search-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        document.getElementById(stages[currentStage]).scrollIntoView({ behavior: 'smooth' });
+        currentStage = (currentStage + 1) % stages.length;
+      });
+    </script>
+
+<section class="cards-wrapper">
+  <div class="card-grid-space">
+    <a class="card" href="./Content/Goals.html"
+      style="background-image: url(./img/top-view-paper-earth-concept.jpg);">
+      <div>
+        <h1>Find a project</h1>
+        <div class="tags">
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="card-grid-space">
+    <a class="card" href="./Content/S"
+      style="background-image: url(./img/front-view-education-day-concept.jpg );">
+      <div>
+        <h1>Take a Work Ticket</h1>
+        <div class="tags">
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="card-grid-space">
+    <a class="card" href="./Content/FeelingCurious.html"
+      style="background-image: url(./img/environment-education-day-concept.jpg);">
+      <div>
+        <h1>Submit Pull Request</h1>
+        <div class="tags">
+        </div>
+      </div>
+    </a>
+  </div>
+
+</section>
+
+  </div>
+
+    <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-------------------------------------- Second  main pathways  --------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+  <div id="Second_stage">
+    <div class="format_header">
+      <h2>Find a Project</h2>
+      <h2>List your interests and expertise</h2>
+    </div>
+   
+    <div class="search-results">
+      <div class="result-box">
+        <a href="https://sdgs.un.org/goals/goal1" class="result-url" target="_blank">URL</a>
+        <h2 class="result-title">End poverty in all its forms everywhere</h2>
+        <p class="result-date">By 2030</p>
+      
+        <p class="result-relevance">Create sound policy frameworks at the national, regional and international levels, based on pro-poor and gender-sensitive development strategies, to support accelerated investment in poverty eradication actions</p>
+      </div>
+      <!-- More result boxes can be added here -->
+
+      <div class="result-box">
+        <a href="https://sdgs.un.org/goals/goal2" class="result-url" target="_blank">URL</a>
+        <h2 class="result-title">End hunger, achieve food security and improved nutrition and promote sustainable agriculture</h2>
+        <p class="result-date">By 2030</p>
+      
+        <p class="result-relevance">Increase investment, including through enhanced international cooperation, in rural infrastructure, agricultural research and extension services, technology development and plant and livestock gene banks in order to enhance agricultural productive capacity in developing countries, in particular least developed countries</p>
+      </div>
+      <div class="result-box">
+        <a href="https://sdgs.un.org/goals/goal3" class="result-url" target="_blank">URL</a>
+        <h2 class="result-title">Ensure healthy lives and promote well-being for all at all ages</h2>
+        <p class="result-date">By 2030</p>
+      
+        <p class="result-relevance">Achieve universal health coverage, including financial risk protection, access to quality essential health-care services and access to safe, effective, quality and affordable essential medicines and vaccines for all</p>
+      </div>
+      <div class="result-box">
+        <a href="https://sdgs.un.org/goals/goal4" class="result-url" target="_blank">URL</a>
+        <h2 class="result-title">Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all</h2>
+        <p class="result-date">By 2030</p>
+      
+        <p class="result-relevance">By 2030, eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable, including persons with disabilities, indigenous peoples and children in vulnerable situations</p>
+      </div>
+      <div class="result-box">
+        <a href="https://sdgs.un.org/goals/goal5" class="result-url" target="_blank">URL</a>
+        <h2 class="result-title">Achieve gender equality and empower all women and girls</h2>
+        <p class="result-date">By 2030</p>
+      
+        <p class="result-relevance">By 2030, eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable, including persons with disabilities, indigenous peoples and children in vulnerable situations</p>
+      </div>
+      <div class="result-box">
+        <a href="https://sdgs.un.org/goals/goal6" class="result-url" target="_blank">URL</a>
+        <h2 class="result-title">Ensure availability and sustainable management of water and sanitation for all</h2>
+        <p class="result-date">By 2030</p>
+      
+        <p class="result-relevance">By 2030, eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable, including persons with disabilities, indigenous peoples and children in vulnerable situations</p>
+      </div>
+      <div class="result-box">
+        <a href="https://sdgs.un.org/goals/goal7" class="result-url" target="_blank">URL</a>
+        <h2 class="result-title">Ensure access to affordable, reliable, sustainable and modern energy for all</h2>
+        <p class="result-date">By 2030</p>
+      
+        <p class="result-relevance">By 2030, eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable, including persons with disabilities, indigenous peoples and children in vulnerable situations</p>
+      </div>
+      <div class="result-box">
+        <a href="https://sdgs.un.org/goals/goal8" class="result-url" target="_blank">URL</a>
+        <h2 class="result-title">Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all</h2>
+        <p class="result-date">By 2030</p>
+      
+        <p class="result-relevance">By 2030, eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable, including persons with disabilities, indigenous peoples and children in vulnerable situations</p>
+      </div>
+      <div class="result-box">
+        <a href="https://sdgs.un.org/goals/goal9" class="result-url" target="_blank">URL</a>
+        <h2 class="result-title">Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation</h2>
+        <p class="result-date">By 2030</p>
+      
+        <p class="result-relevance">By 2030, eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable, including persons with disabilities, indigenous peoples and children in vulnerable situations</p>
+      </div>
+      <div class="result-box">
+        <a href="https://sdgs.un.org/goals/goal10" class="result-url" target="_blank">URL</a>
+        <h2 class="result-title"> Reduce inequality within and among countries  </h2>
+        <p class="result-date">By 2030</p>
+      
+        <p class="result-relevance">By 2030, eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable, including persons with disabilities, indigenous peoples and children in vulnerable situations</p>
+      </div>
+      <div class="result-box">
+        <a href="https://sdgs.un.org/goals/goal11" class="result-url" target="_blank">URL</a>
+        <h2 class="result-title">Make cities and human settlements inclusive, safe, resilient and sustainable</h2>
+        <p class="result-date">By 2030</p>
+      
+        <p class="result-relevance">By 2030, eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable, including persons with disabilities, indigenous peoples and children in vulnerable situations</p>
+      </div>
+      <div class="result-box">
+        <a href="https://sdgs.un.org/goals/goal12" class="result-url" target="_blank">URL</a>
+        <h2 class="result-title">Ensure sustainable consumption and production patterns</h2>
+        <p class="result-date">By 2030</p>
+      
+        <p class="result-relevance">By 2030, eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable, including persons with disabilities, indigenous peoples and children in vulnerable situations</p>
+      </div>
+    <div class="result-box">
+      <a href="https://sdgs.un.org/goals/goal13" class="result-url" target="_blank">URL</a>
+      <h2 class="result-title">Take urgent action to combat climate change and its impacts</h2>
+      <p class="result-date">By 2030</p>
+    
+      <p class="result-relevance">By 2030, eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable, including persons with disabilities, indigenous peoples and children in vulnerable situations</p>
+    </div>
+    <div class="result-box">
+      <a href="https://sdgs.un.org/goals/goal14" class="result-url" target="_blank">URL</a>
+      <h2 class="result-title">Conserve and sustainably use the oceans, seas and marine resources for sustainable development</h2>
+      <p class="result-date">By 2030</p>
+    
+      <p class="result-relevance">By 2030, eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable, including persons with disabilities, indigenous peoples and children in vulnerable situations</p>
+    </div>
+    <div class="result-box">
+      <a href="https://sdgs.un.org/goals/goal15" class="result-url" target="_blank">URL</a>
+      <h2 class="result-title">Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss</h2>
+      <p class="result-date">By 2030</p>
+    
+      <p class="result-relevance">By 2030, eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable, including persons with disabilities, indigenous peoples and children in vulnerable situations</p>
+    </div>
+    <div class="result-box">
+      <a href="https://sdgs.un.org/goals/goal16" class="result-url" target="_blank">URL</a>
+      <h2 class="result-title">Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels</h2>
+      <p class="result-date">By 2030</p>
+    
+      <p class="result-relevance">By 2030, eliminate gender disparities in education and ensure equal access to all levels of education and vocational training for the vulnerable, including persons with disabilities, indigenous peoples and children in vulnerable situations</p>
+    </div>
+    <div class="result-box">
+      <a href="https://sdgs.un.org/goals/goal17" class="result-url" target="_blank">URL</a>
+      <h2 class="result-title">Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development</h2>
+      <p class="result-date">By 2030</p>
+    
+      <p class="result-relevance">Assist developing countries in attaining long-term debt sustainability through coordinated policies aimed at fostering debt financing, debt relief and debt restructuring, as appropriate, and address the external debt of highly indebted poor countries to reduce debt distress</p>
+    </div>
+  </div>
+
+  </div>
+
+  <div id="Third_stage">
+    <div class="format_header">
+      <h2>Find the Right Ticket and Project</h2>
+    </div>
+
+    <div class="container">
+      <div class="bunch-A">
+        <div class="item-container">
+          <div class="item" style="background-color: #ff6347;"></div>
+          <div class="item" style="background-color: #3cb371;"></div>
+          <div class="item" style="background-color: #1e90ff;"></div>
+          <div class="item" style="background-color: #ff6347;"></div>
+          <div class="item" style="background-color: #3cb371;">Interest</div>
+          <div class="item" style="background-color: #1e90ff;">Passion </div>
+        </div>
+        <!-- Content of bunch A -->
+      </div>
+      <div class="bunch-B">
+        <div class="item-container">
+          <div class="item" style="background-color: #ff6347;"></div>
+          <div class="item" style="background-color: #3cb371;"></div>
+          <div class="item" style="background-color: #1e90ff;"></div>
+          <div class="item" style="background-color: #3cb371;"></div>
+          <div class="item" style="background-color: #3cb371;">Skills</div>
+          <div class="item" style="background-color: #ff6347;">Experience</div>
+        </div>
+        <!-- Content of bunch B -->
+      </div>
+      <div class="bunch-C">
+        <div class="item-container">
+          <div class="item" style="background-color: #ff6347;"></div>
+          <div class="item" style="background-color: #ff6347;"></div>
+          <div class="item" style="background-color: #1e90ff;"></div>
+          <div class="item" style="background-color: #3cb371;">ASvailable</div>
+        </div>
+        <!-- Content of bunch C -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="Fourth_stage">
+    <div class="format_header">
+      <h2>Two year plan to reach the 17 UN SDG's</h2>
+      <h2>Starting with the Man in the Mirror</h2>
+    </div>
+    <div class = "icon_format" >
+      <div class="icon-row">
+        <a href="https://www.youtube.com" target="_blank">
+            <img src="./img/new_Icons/yt_logo_rgb_light.png" alt="YouTube" class="icon">
+        </a>
+        <a href="https://calendar.google.com" target="_blank">
+            <img src="./img/new_Icons/Google_Calendar_icon_(2020).svg.png" alt="Google Calendar" class="icon">
+        </a>
+        <a href="https://docs.google.com" target="_blank">
+            <img src="./img/new_Icons/Google_Docs_Logo_64px.png" alt="Google Docs" class="icon">
+        </a>
+    </div>
+
+    </div>
+    <div class="search-results">
+      <div class="timeline-container">
+        <!-- Year 1: Foundation and Immediate Actions -->
+        <div class="year-section" id="year1">
+            <h2>Year 1: Foundation and Immediate Actions</h2>
+            <!-- Months 1-3: Laying the Groundwork -->
+            <div class="action-item">
+                <h3>Months 1-3: Laying the Groundwork</h3>
+                <div class="actions">
+                    <div class="sdg-icon">🌱</div>
+                    <p><strong>Adopt a Plant-Based Diet:</strong> Start incorporating one plant-based meal a day.</p>
+                    <div class="sdg-icon">♻️</div>
+                    <p><strong>Reduce Waste:</strong> Conduct a waste audit and minimize single-use plastics.</p>
+                    <div class="sdg-icon">📚</div>
+                    <p><strong>Stay Educated:</strong> Dedicate time each week to learn about an SDG.</p>
+                </div>
+            </div>
+            <!-- Months 4-6: Expanding Impact -->
+            <div class="action-item">
+                <h3>Months 4-6: Expanding Impact</h3>
+                <div class="actions">
+                    <div class="sdg-icon">🤝</div>
+                    <p><strong>Advocate for Human Rights:</strong> Participate in advocacy for human rights.</p>
+                    <div class="sdg-icon">🧹</div>
+                    <p><strong>Cleaning up Litter:</strong> Organize or participate in local clean-up drives.</p>
+                    <div class="sdg-icon">🌿</div>
+                    <p><strong>Growing a Garden:</strong> Start a small garden or join a community garden.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Year 2: Consolidation and Scaling Up -->
+        <div class="year-section" id="year2">
+            <h2>Year 2: Consolidation and Scaling Up</h2>
+            <!-- Months 13-18: Building on Success -->
+            <div class="action-item">
+                <h3>Months 13-18: Building on Success</h3>
+                <div class="actions">
+                    <div class="sdg-icon">🔍</div>
+                    <p><strong>Evaluate Your Impact:</strong> Assess changes and their impact on your carbon footprint.</p>
+                    <div class="sdg-icon">📢</div>
+                    <p><strong>Expand Your Advocacy:</strong> Lead in advocacy and organize larger awareness events.</p>
+                </div>
+            </div>
+            <!-- Months 19-24: Sustaining Momentum and Creating Legacy -->
+            <div class="action-item">
+                <h3>Months 19-24: Sustaining Momentum and Creating Legacy</h3>
+                <div class="actions">
+                    <div class="sdg-icon">👥</div>
+                    <p><strong>Mentor Others:</strong> Share experiences and mentor individuals or groups.</p>
+                    <div class="sdg-icon">📜</div>
+                    <p><strong>Contribute to Policy Making:</strong> Engage with policymakers and advocate for supportive policies.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+
+     
+    </div>
+
+    <div id="Footer">  
+      <section class="cards-wrapper">
+        <div class="card-grid-space">
+          <a class="card" href="./Content/Goals.html"
+            style="background-image: url(./img/top-view-paper-earth-concept.jpg);">
+            <div>
+              <h1>Google Platforms</h1>
+              <div class="tags">
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <div class="card-grid-space">
+          <a class="card" href="./Content/S"
+            style="background-image: url(./img/front-view-education-day-concept.jpg );">
+            <div>
+              <h1>Hit your Goals</h1>
+              <div class="tags">
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <div class="card-grid-space">
+          <a class="card" href="./Content/FeelingCurious.html"
+            style="background-image: url(./img/environment-education-day-concept.jpg);">
+            <div>
+              <h1>Learn Something</h1>
+              <div class="tags">
+              </div>
+            </div>
+          </a>
+        </div>
+  
+      </section>
+    </div>
+  
+
+
+</body>
+
+</html>

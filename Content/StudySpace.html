@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEAD STARTS -->
+
+<head>
+  <title>Study Space</title>
+  <!-- META STARTS -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Daniela Gallegos Dupuis">
+  <meta property="og:type" content="website">
+  <!-- META ENDS -->
+  <!-- FAVICON -->
+  <link rel="icon" href="./img/logo.png">
+  <!-- STYLES BEGIN -->
+  <link rel="stylesheet" href="./styles/studySpace.css">
+
+  <!-- for card -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<!-- HEAD ENDS -->
+
+<body>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-------------------------------------- Loader  --------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="loader">
+    <!-- Loading square for squar.red network -->
+    <span class="loader"><span class="loader-inner"></span></span>
+    <script>  $("#loader").fadeOut(3333);</script>
+  </div>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-------------------------------------- Three main pathways  --------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+
+  <div id="choose_path">
+    <div class="header">
+      <a target='_blank' href="https://github.com/danigallegdup/GoogleSolutionChallenge24">GitHub</a>
+      <a href="./account.html">Acount</a>
+      <a href="./sdg_4.html">SDG#4</a>
+
+    </div>
+
+    <div class="search-container">
+      <form id="search-form" action="/search" method="get">
+        <input type="search" id="search-input" name="q" placeholder="Help me refine my life Skills">
+        <button type="submit" class="search-button">Go</button>
+      </form>
+    </div>
+
+    <script>
+      var stages = ['Second_stage', 'Third_stage', 'Fourth_stage', 'choose_path'];
+      var currentStage = 0;
+
+      document.getElementById('search-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        document.getElementById(stages[currentStage]).scrollIntoView({ behavior: 'smooth' });
+        currentStage = (currentStage + 1) % stages.length;
+      });
+    </script>
+
+   
+  </div>
+
+
+  <div id="Second_stage">
+    <div class="format_header">
+      <h2>Practical Skills</h2>
+    </div>
+    
+    <section class="cards-wrapper">
+      <div class="card-grid-space">
+        <a class="card" href="../index.html"
+          style="background-image: url(../img/top-view-paper-earth-concept.jpg);">
+          <div>
+            <h1>Numeracy</h1>
+            <div class="tags">
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-grid-space">
+        <a class="card" href="./Goals.html"
+          style="background-image: url(../img/front-view-education-day-concept.jpg );">
+          <div>
+            <h1>Literacy</h1>
+            <div class="tags">
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-grid-space">
+        <a class="card" href="./FeelingCurious.html"
+          style="background-image: url(../img/environment-education-day-concept.jpg);">
+          <div>
+            <h1>Technical </h1>
+            <div class="tags">
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-grid-space">
+        <a class="card" href="../index.html"
+          style="background-image: url(../img/top-view-paper-earth-concept.jpg);">
+          <div>
+            <h1> Professional Development </h1>
+            <div class="tags">
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div id="Third_stage">
+    <div class="format_header">
+      <h2>Real World Skills</h2>
+    </div>
+    <section class="cards-wrapper">
+      <div class="card-grid-space">
+        <a class="card" href="../index.html"
+          style="background-image: url(../img/top-view-paper-earth-concept.jpg);">
+          <div>
+            <h1>Sustainable Living</h1>
+            <div class="tags">
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-grid-space">
+        <a class="card" href="./Goals.html"
+          style="background-image: url(../img/front-view-education-day-concept.jpg );">
+          <div>
+            <h1>Human Rights</h1>
+            <div class="tags">
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-grid-space">
+        <a class="card" href="./FeelingCurious.html"
+          style="background-image: url(../img/environment-education-day-concept.jpg);">
+          <div>
+            <h1>Gender Equality</h1>
+            <div class="tags">
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-grid-space">
+        <a class="card" href="../index.html"
+          style="background-image: url(../img/top-view-paper-earth-concept.jpg);">
+          <div>
+            <h1>World Building</h1>
+            <div class="tags">
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </section>
+  </div>
+
+
+
+  <div id="Fourth_stage">
+    <div class="format_header">
+      <h2>Two year plan to reach the 17 UN SDG's</h2>
+    </div>
+
+    
+    <section class="cards-wrapper">
+      <div class="card-grid-space">
+        <a class="card" href="./FeelingCurious.html"
+          style="background-image: url(../img/top-view-paper-earth-concept.jpg);">
+          <div>
+            <h1>Explore Human Knowledge</h1>
+            <div class="tags">
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-grid-space">
+        <a class="card" href="./Goals.html"
+          style="background-image: url(../img/front-view-education-day-concept.jpg );">
+          <div>
+            <h1>Hit your Goals</h1>
+            <div class="tags">
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-grid-space">
+        <a class="card" href="./FeelingCurious.html"
+          style="background-image: url(../img/environment-education-day-concept.jpg);">
+          <div>
+            <h1>Learn Something</h1>
+            <div class="tags">
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-grid-space">
+        <a class="card" href="../index.html"
+          style="background-image: url(../img/top-view-paper-earth-concept.jpg);">
+          <div>
+            <h1>Home</h1>
+            <div class="tags">
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </section>
+
+    
+
+     
+    </div>
+
+</body>
+
+</html>

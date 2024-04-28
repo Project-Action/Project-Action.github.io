@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- HEAD STARTS -->
+
+<head>
+  <title>Sage</title>
+  <!-- META STARTS -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Daniela Gallegos Dupuis">
+  <meta property="og:type" content="website">
+  <!-- META ENDS -->
+  <!-- FAVICON -->
+  <link rel="icon" href="./img/logo.png">
+  <!-- STYLES BEGIN -->
+  <link rel="stylesheet" href="./styles/homepage.css">
+
+  <!-- for card -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<!-- HEAD ENDS -->
+
+<body>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-------------------------------------- Loader  --------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <div id="loader">
+    <!-- Loading square for squar.red network -->
+    <span class="loader"><span class="loader-inner"></span></span>
+    <script>  $("#loader").fadeOut(3333);</script>
+  </div>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+  <!-------------------------------------- Three main pathways  --------------------------------------------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------------------------------------------->
+
+  <div id="choose_path">
+    <div class="header">
+      <a target='_blank' href="https://github.com/danigallegdup/GoogleSolutionChallenge24">GitHub</a>
+      <a href="./account.html">Acount</a>
+      <a href="./sdg_4.html">SDG#4</a>
+
+    </div>
+
+    <div class="search-container">
+      <form id="search-form" action="/search" method="get">
+        <input type="search" id="search-input" name="q" placeholder="How does Sage Work?">
+        <button type="submit" class="search-button">Go</button>
+      </form>
+    </div>
+
+    <script>
+      var stages = ['Second_stage', 'Third_stage', 'Fourth_stage', 'Footer'];
+      var currentStage = 0;
+
+      document.getElementById('search-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        document.getElementById(stages[currentStage]).scrollIntoView({ behavior: 'smooth' });
+        currentStage = (currentStage + 1) % stages.length;
+      });
+    </script>
+  </div>
+
+
+  <div id="Second_stage">
+    <div class="format_header">
+      <h2>Google Seach Engine and Youtube API</h2>
+      <h2>Gathers and Filters content</h2>
+    </div>
+    <div class="format_header">
+    </div>
+    <div class="search-results">
+      <div class="result-box">
+        <a href="https://learning.google/" class="result-url">URL</a>
+        <h2 class="result-title">Helping everyone in the world learn anything in the world.</h2>
+        <p class="result-date">Date</p>
+        <p class="result-type">Type of Data</p>
+        <p class="result-relevance">Relevance</p>
+      </div>
+      <!-- More result boxes can be added here -->
+      <div class="result-box">
+        <a href="https://edu.google.com/intl/ALL_ca/" class="result-url">URL</a>
+        <h2 class="result-title">Products that power education</h2>
+        <p class="result-date">Date</p>
+        <p class="result-type">organization</p>
+        <p class="result-relevance">Relevance</p>
+      </div>
+      <div class="result-box">
+        <a href="https://aicontentfy.com/en/blog/understanding-google-search-api-documentation-comprehensive-review#:~:text=To%20set%20up%20your%20API,%22key%3DYOUR_API_KEY%22)." class="result-url">URL</a>
+        <h2 class="result-title">Understanding the Google Search API Documentation</h2>
+        <p class="result-date">
+          November 20, 2023</p>
+        <p class="result-type">Blog</p>
+        <p class="result-relevance">By 
+          AIContentfy team8 minute read</p>
+      </div>
+      <div class="result-box">
+        <a href="https://solveeducation.org/" class="result-url">URL</a>
+        <h2 class="result-title">ENABLE PEOPLE TO EMPOWER
+          THEMSELVES THROUGH EDUCATION</h2>
+        <p class="result-date">Date</p>
+        <p class="result-type">organization</p>
+        <p class="result-relevance">We provide a fun, easy-to-access way to learn, no matter who they are or where they are from</p>
+      </div>
+      <div class="result-box">
+        <a href="https://www.khanacademy.org/profile/me/courses" class="result-url">URL</a>
+        <h2 class="result-title">Khan Academy | Free Online Courses, Lessons & Practice</h2>
+        <p class="result-date">Date</p>
+        <p class="result-type">organization</p>
+        <p class="result-relevance">Relevance</p>
+      </div>
+      <!-- More result boxes can be added here -->
+    </div>
+
+  </div>
+
+  <div id="Third_stage">
+    <div class="format_header">
+      <h2>Interact and Catagorize</h2>
+      <h2> With Gathered Data</h2>
+    </div>
+
+    <div class="container">
+      <div class="bunch-A">
+        <div class="item-container">
+          <div class="item" style="background-color: #ff6347;">Sort</div>
+          <div class="item" style="background-color: #3cb371;">Graph</div>
+          <div class="item" style="background-color: #1e90ff;">Visualize</div>
+        </div>
+        <!-- Content of bunch A -->
+      </div>
+      <div class="bunch-B">
+        <div class="item-container">
+          <div class="item" style="background-color: #ff6347;">Group</div>
+          <div class="item" style="background-color: #3cb371;">Join</div>
+          <div class="item" style="background-color: #1e90ff;">Integrate</div>
+          <div class="item" style="background-color: #1e90ff;">Filter</div>
+        </div>
+        <!-- Content of bunch B -->
+      </div>
+      <div class="bunch-C">
+        <div class="item-container">
+          <div class="item" style="background-color: #ff6347;">modify</div>
+          <div class="item" style="background-color: #1e90ff;">create</div>
+        </div>
+        <!-- Content of bunch C -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="Fourth_stage">
+    <div class="format_header">
+      <h2>Create Timelines and add to Calendar</h2>
+      <h2>Store past notes in Google Docs</h2>
+    </div>
+    <div class = "icon_format" >
+      <div class="icon-row">
+        <a href="https://calendar.google.com" target="_blank">
+          <img src="../img/new_Icons/Google_Calendar_icon_(2020).svg.png" alt="Google Calendar" class="icon">
+      </a>
+      <a href="https://docs.google.com" target="_blank">
+          <img src="../img/new_Icons/Google_Docs_Logo_64px.png" alt="Google Docs" class="icon">
+      </a>
+        <a href="https://www.youtube.com" target="_blank">
+            <img src="../img/new_Icons/yt_logo_rgb_light.png" alt="YouTube" class="icon">
+        </a>
+      
+    </div>
+
+    </div>
+    <div class="search-results">
+      <div class="timeline-container">
+          <!-- Year 1: Launch and Development -->
+          <div class="year-section" id="year1">
+              <h2>Year 1: Launch and Development</h2>
+              <!-- Months 1-3: Product Launch -->
+              <div class="action-item">
+                  <h3>Months 1-3: Product Launch</h3>
+                  <div class="actions">
+                      <div class="sdg-icon">🚀</div>
+                      <p><strong>Introducing Sage:</strong> Launch Sage, the smart browser designed to streamline learning by integrating Google Search, YouTube, and Calendar.</p>
+                      <div class="sdg-icon">🔍</div>
+                      <p><strong>Optimization:</strong> Refine search algorithms for efficiency and relevance in educational content discovery.</p>
+                      <div class="sdg-icon">🌐</div>
+                      <p><strong>User Engagement:</strong> Implement feedback mechanisms for users to shape the development of Sage.</p>
+                  </div>
+              </div>
+              <!-- Months 4-6: Feature Expansion -->
+              <div class="action-item">
+                  <h3>Months 4-6: Feature Expansion</h3>
+                  <div class="actions">
+                      <div class="sdg-icon">🤖</div>
+                      <p><strong>AI Chatbots Integration:</strong> Deploy AI chatbots to guide users through complex information landscapes.</p>
+                      <div class="sdg-icon">☁️</div>
+                      <p><strong>Cloud Storage Solutions:</strong> Introduce comprehensive cloud storage options for personalized learning material organization.</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Year 2: Growth and New Technologies -->
+          <div class="year-section" id="year2">
+              <h2>Year 2: Growth and New Technologies</h2>
+              <!-- Months 13-18: Enhancing Interactivity -->
+              <div class="action-item">
+                  <h3>Months 13-18: Enhancing Interactivity</h3>
+                  <div class="actions">
+                      <div class="sdg-icon">👓</div>
+                      <p><strong>Augmented Reality Features:</strong> Develop immersive AR tools to provide a more engaging learning experience.</p>
+                      <div class="sdg-icon">🤝</div>
+                      <p><strong>Collaborative Learning:</strong> Create spaces within Sage for collaborative learning, allowing users to work together in real-time.</p>
+                  </div>
+              </div>
+              <!-- Months 19-24: Legacy and Expansion -->
+              <div class="action-item">
+                  <h3>Months 19-24: Legacy and Expansion</h3>
+                  <div class="actions">
+                      <div class="sdg-icon">🌍</div>
+                      <p><strong>Global Reach:</strong> Expand the availability of Sage to underserved regions, bridging the digital divide.</p>
+                      <div class="sdg-icon">📈</div>
+                      <p><strong>Learning Analytics:</strong> Implement advanced analytics to provide insights into learning patterns and help tailor individual educational journeys.</p>
+                  </div>
+              </div>
+          </div>
+                  <!-- Year 2: Growth and New Technologies -->
+                  <div class="year-section" id="year2">
+                    <h2>Year 3: Incorporating Qualified Tutors and Teachers</h2>
+                    <!-- Months 13-18: Enhancing Interactivity -->
+                    <div class="action-item">
+                        <h3>Augment Humanity</h3>
+                        <div class="actions">
+                            <div class="sdg-icon">👓</div>
+                            <p><strong>Augmented Reality Features:</strong> Develop immersive AR tools to provide a more engaging learning experience.</p>
+                            <div class="sdg-icon">🤝</div>
+                            <p><strong>Collaborative Learning:</strong> Create spaces within Sage for collaborative learning, allowing users to work together in real-time.</p>
+                        </div>
+                    </div>
+                    <!-- Months 19-24: Legacy and Expansion -->
+                    <div class="action-item">
+                        <h3>Months 19-24: Legacy and Expansion</h3>
+                        <div class="actions">
+                            <div class="sdg-icon">🌍</div>
+                            <p><strong>Global Reach:</strong> Expand the availability of Sage to underserved regions, bridging the digital divide.</p>
+                            <div class="sdg-icon">📈</div>
+                            <p><strong>Learning Analytics:</strong> Implement advanced analytics to provide insights into learning patterns and help tailor individual educational journeys.</p>
+                        </div>
+                    </div>
+                </div>
+      </div>
+  </div>
+  
+    
+
+     
+    </div>
+
+
+    <div id="Footer">  
+      <section class="cards-wrapper">
+        <div class="card-grid-space">
+          <a class="card" href="./sdg_4.html"
+            style="background-image: url(../img/top-view-paper-earth-concept.jpg);">
+            <div>
+              <h1>UN SDG #4</h1>
+              <div class="tags">
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <div class="card-grid-space">
+          <a class="card" href="./Content/S"
+            style="background-image: url(../img/front-view-education-day-concept.jpg );">
+            <div>
+              <h1>Hit your Goals</h1>
+              <div class="tags">
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <div class="card-grid-space">
+          <a class="card" href="./Content/FeelingCurious.html"
+            style="background-image: url(../img/environment-education-day-concept.jpg);">
+            <div>
+              <h1>Learn Something</h1>
+              <div class="tags">
+              </div>
+            </div>
+          </a>
+        </div>
+  
+      </section>
+    </div>
+  
+
+</body>
+
+</html>
